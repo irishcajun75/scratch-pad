@@ -20,7 +20,7 @@ Practice the basics of JavaScript by passing unit tests.
 
 ## Getting Started with Debugging
 
-It is extremely important for you to begin debugging as you work. It's important to make use of `console.log(someValue);` to print expected values to the console and inspect your work. It is also highly valuable to get use to using breakpoints and the debugging tools of Cloud9 (and any other IDE you choose to use in the future)
+It is extremely important for you to begin debugging as you work. It's important to make use of `console.log(someValue);` to print expected values to the console and inspect your work.
 
 ---
 
