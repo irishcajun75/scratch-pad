@@ -18,12 +18,42 @@
  *
  *  TIPS:
  *  a. create something to collect the output you'll return.
- *  b. you'll need a loop, which one is best?
+ *  b. you'll need a loop, which one is best? "a standard for loop lets us manage the index counter
+ *      directly because we know the exact starting and ending point before starting"
  *  c. you'll wanna make use of the push() method of Array.
+ * 
+ * I: two integers
+ * O: an array containing all integers from start to end, inclusive
+ * C: must use the push method to collect output
+ * E: start is greater than end, should loop downwards or handle decscending order
+ *    start and end are equal returns [3]
+ *    negative numbers
  */
 function range(start, end) {
-  // YOUR CODE HERE //
+  // Collection array to hold output
+  const result = [];
+
+  if (start <= end) {
+    // Count up
+    for (let i = start; i <= end; i++) {
+      result.push(i);
+    }
+  } else {
+    // count down if start > end
+    for (let i = start; i >= end; i--) {
+      result.push(i);
+
+    }
+  }
+
+  return result;
+  
 }
+
+// Examples
+console.log(range(1, 4));
+console.log(range(-2, 2));
+console.log(range(5,2));
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
