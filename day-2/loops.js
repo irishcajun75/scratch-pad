@@ -11,7 +11,10 @@
  * using console.log().
  */
 function printArrayValues(array) {
-  // YOUR CODE HERE //
+  // Loop forward from index 0 to the end of the array
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
 }
 
 /**
@@ -19,14 +22,23 @@ function printArrayValues(array) {
  * using console.log().
  */
 function printArrayValuesInReverse(array) {
-  // YOUR CODE HERE //
+  // Loop backward from the last index down to index 0
+  for (let i = array.length - 1; i >= 0; i--) {
+    console.log(array[i]);
+  }
 }
 
 /**
  * Given an input Object, return an Array containing the Object keys.
  */
 function getObjectKeys(object) {
-  // YOUR CODE HERE //
+  let keys = [];
+
+  // loop through every propery key in the object
+  for (let key in object) {
+    keys.push(key);
+  }
+  return keys;
 }
 
 /**
@@ -34,14 +46,16 @@ function getObjectKeys(object) {
  * using console.log().
  */
 function printObjectKeys(object) {
-  // YOUR CODE HERE //
+  for (let key in object) {
+    console.log(key);
+  }
 }
 
 /**
  * Given an input Object, return an Array containing the Object's values.
  */
 function getObjectValues(object) {
-  // YOUR CODE HERE //
+  return Object.values(object);
 }
 
 /**
@@ -49,14 +63,16 @@ function getObjectValues(object) {
  * using console.log().
  */
 function printObjectValues(object) {
-  // YOUR CODE HERE //
+  for (let key in object) {
+    console.log(object[key]);
+  }
 }
 
 /**
  * Given an input Object, return the number of key/value pairs stored within that Object.
  */
 function getObjectLength(object) {
-  // YOUR CODE HERE //
+  return Object.keys(object).length;
 }
 
 /**
@@ -64,8 +80,13 @@ function getObjectLength(object) {
  * print its values using console.log()?
  */
 function printObjectValuesInReverse(object) {
-  // YOUR CODE HERE //
+  let values = Object.values(object);
+
+  for (let i = values.length - 1; i >= 0; i--) {
+    console.log(values[i]);
+  }
 }
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if (
