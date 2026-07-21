@@ -14,10 +14,13 @@
 
 /**
  * Given an input value, print the value to the screen using console.log().
+ * "The function 'print" has a placeholder input called value.  Inside the curly braces{} - which
+ * is the function's body-we use console.log() and pass that same value inside its parentheses
+ * so JavaScript prints whatever comes in.""
  */
 
 function print(value) {
-  // YOUR CODE HERE //
+  console.log(value);
 }
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
